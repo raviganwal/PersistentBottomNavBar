@@ -96,7 +96,9 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
                               width: item.indicatorWidth,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(item.indicatorRadius,),
-                                  border: Border.all(color: item.color,width: 2),
+                                  border: Border.all(color:isSelected
+                                      ?  item.color
+                                      : Colors.transparent,width: 2),
                                   color: isSelected
                                       ?  item.color
                                       : Colors.transparent),
