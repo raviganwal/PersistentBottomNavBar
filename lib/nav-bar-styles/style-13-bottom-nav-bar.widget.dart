@@ -73,14 +73,15 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
                       child: IconTheme(
                         data: IconThemeData(
                             size: item.iconSize,
-                            color: isSelected
-                                ? (item.activeColorAlternate == null
-                                    ? item.activeColor
-                                    : item.activeColorAlternate)
-                                : item.inactiveColor == null
-                                    ? item.activeColor
-                                    : item.inactiveColor),
-                        child: item.icon,
+                            // color: isSelected
+                            //     ? (item.activeColorAlternate == null
+                            //         ? item.activeColor
+                            //         : item.activeColorAlternate)
+                            //     : item.inactiveColor == null
+                            //         ? item.activeColor
+                            //         : item.inactiveColor
+                        ),
+                        child: isSelected?item.activeIcon:item.inActiveIcon,
                       ),
                     ),
                     item.title == null
@@ -97,7 +98,7 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
                                   borderRadius: BorderRadius.circular(item.indicatorRadius),
                                   color: isSelected
                                       ? (item.activeColorAlternate == null
-                                          ? item.activeColor
+                                          ? item.color
                                           : item.activeColorAlternate)
                                       : Colors.transparent),
                             ),
