@@ -92,7 +92,7 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
                                       .itemAnimationProperties?.duration ??
                                   Duration(milliseconds: 400),
                               height: 5.0,
-                              width: itemWidth * 0.8,
+                              width: itemWidth * 0.3,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100.0),
                                   color: isSelected
