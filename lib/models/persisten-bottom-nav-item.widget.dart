@@ -67,7 +67,7 @@ class PersistentBottomNavBarItem {
       this.textStyle,
       this.iconSize = 26.0,
       this.onSelectedTabPressWhenNoScreensPushed,
-      this.indicatorHeight = 0,
+      this.indicatorHeight = 2.0,
       this.indicatorWidth = 17.0,
       this.indicatorRadius = 2.0,
       this.onPressed}) {
