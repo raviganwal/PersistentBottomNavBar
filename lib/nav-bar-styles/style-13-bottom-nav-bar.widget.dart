@@ -25,7 +25,7 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
     super.initState();
     _lastSelectedIndex = 0;
     _selectedIndex = 0;
-    _animationControllerList = List<AnimationController>();
+    _animationControllerList = [];
     _animationList = List<Animation<Offset>>();
 
     for (int i = 0; i < widget.navBarEssentials.items.length; ++i) {
@@ -91,10 +91,10 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
                               duration: widget.navBarEssentials
                                       .itemAnimationProperties?.duration ??
                                   Duration(milliseconds: 400),
-                              height: 5.0,
-                              width: itemWidth * 0.3,
+                              height: item.indicatorHeight,
+                              width: item.indicatorWidth,
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(100.0),
+                                  borderRadius: BorderRadius.circular(item.indicatorRadius),
                                   color: isSelected
                                       ? (item.activeColorAlternate == null
                                           ? item.activeColor
@@ -121,8 +121,8 @@ class _BottomNavStyle13State extends State<BottomNavStyle13>
   Widget build(BuildContext context) {
     if (widget.navBarEssentials.items.length !=
         _animationControllerList.length) {
-      _animationControllerList = List<AnimationController>();
-      _animationList = List<Animation<Offset>>();
+      _animationControllerList = [];
+      _animationList = [];
 
       for (int i = 0; i < widget.navBarEssentials.items.length; ++i) {
         _animationControllerList.add(AnimationController(

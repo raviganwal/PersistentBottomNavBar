@@ -46,6 +46,15 @@ class PersistentBottomNavBarItem {
 
   final double iconSize;
 
+  /// width of bottom indicator
+  final double indicatorWidth;
+
+  ///width of bottom indicator
+  final double indicatorHeight;
+
+  ///bottom indicator radius
+  final double indicatorRadius;
+
   PersistentBottomNavBarItem(
       {@required this.icon,
       this.title,
@@ -58,6 +67,9 @@ class PersistentBottomNavBarItem {
       this.textStyle,
       this.iconSize = 26.0,
       this.onSelectedTabPressWhenNoScreensPushed,
+      this.indicatorHeight = 0,
+      this.indicatorWidth = 17.0,
+      this.indicatorRadius = 2.0,
       this.onPressed}) {
     assert(icon != null);
     assert(opacity >= 0 && opacity <= 1.0);
