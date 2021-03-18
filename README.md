@@ -1,3 +1,7 @@
+## Update:- customized style 13
+![RECORD](https://user-images.githubusercontent.com/22388017/111617515-375f2e80-8809-11eb-9893-9004b7416f2c.gif)
+
+
 # Persistent Bottom Navigation Bar
 
 [![pub package version](https://img.shields.io/pub/v/persistent_bottom_nav_bar)](https://pub.dev/packages/persistent_bottom_nav_bar)
@@ -9,8 +13,6 @@ A persistent/static bottom navigation bar for Flutter.
 NOTE: Those migrating from **pre 2.0.0** version should check the latest Readme and instructions as there are many breaking changes introduced in the 2.0.0 update
 
 ![Persistent Behavior](gifs/persistent.gif)
-## Updates:- customized style 13
-![RECORD](https://user-images.githubusercontent.com/22388017/111617515-375f2e80-8809-11eb-9893-9004b7416f2c.gif)
 
 ## Styles
 
