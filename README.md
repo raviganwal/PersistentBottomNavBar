@@ -26,7 +26,7 @@ NOTE: Those migrating from **pre 2.0.0** version should check the latest Readme 
 
 | Style12  | Style13 |
 | ------------- | ------------- |
-| ![style6](gifs/style-12.gif)  | ![style8](gifs/style-13.gif)  |
+| ![style6](gifs/style-12.gif)  | ![style8]![RECORD](https://user-images.githubusercontent.com/22388017/111617515-375f2e80-8809-11eb-9893-9004b7416f2c.gif)|
 
 | Style3 | Style6 |
 | ------------- | ------------- |
